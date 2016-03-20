@@ -1,0 +1,13 @@
+David Sun
+ddsun@ucsc.edu
+pa5 (FindComponents)
+
+Files submitted include:
+README - contains lists of files submitted
+Makefile - builds the FindComponents and GraphTest executables
+List.c - implementation for list client
+List.h - header file for list client
+Graph.h - header file for the graph client
+Graph.c - implementation for the graph client
+GraphTest.c - tests the graph client
+FindComponents.c - runs the main program

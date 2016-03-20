@@ -1,0 +1,12 @@
+
+$Id: README,v 1.1 2015-06-03 17:08:40-07 - - $
+David Sun (ddsun@ucsc.edu)
+This program runs a client / server that allows file transfer
+Files submitted include:
+sockets.h
+sockets.cpp
+protocol.h
+protocol.cpp
+logstream.h
+cixd.cpp
+cix.cpp

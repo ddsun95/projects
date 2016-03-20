@@ -1,0 +1,232 @@
+# David Sun
+# 1357057
+# CMPS 12B/M
+# 12/7/2014
+# demo.adventure
+# This file is my own adventure file
+# It contains 21 rooms, and takes a minimum of 7 moves to win
+
+r wake
+d You have awoken.
+d You realize it's just another typical Monday morning.
+d The sadness settles in, but you realize you have the day ahead of you.
+o Rest your eyes some more.
+t dream
+o Get up and shower
+t shower
+o Get up and eat breakfast
+t breakfast
+o foo
+t wake
+o bar
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+o foo
+t wake
+
+r dream
+d You are dreaming.
+d You've realized you can control what you dream.
+o Dream about a happy place.
+t happy
+o Dream about a thrilling place.
+t thrilling
+
+r happy
+d You feel happy here.
+d You feel euphoric, blissful, and loved.
+d Suddenly, you hear a ringing.
+d You realize the ringing sounds fimiliar.
+d It's the sound of your roommate's alarm.
+d You realize this happiness is just an illusion.
+o The alarm wakes you up.
+t wake
+
+r thrilling
+d You feel excited.
+d You are riding a rollercoaster, and it's about to drop.
+d You are so high above the ground.
+d Right at the highest point of the ride, you hear a noise
+d It's an alarm, the sound of your roommate's alarm
+d The excitement is just an illusion.
+o The alarm wakes you up.
+t wake
+
+r shower
+d You are showering.
+d You spend a good twenty minutes in the shower.
+d You contemplate the universe.
+d The water is getting cold, you better step out.
+d You step out of the shower and get ready.
+o You feel tired, skip class.
+t skipping
+o You get ready for class
+t class
+
+r breakfast
+d You go to College 10 dining hall in anticipation of bacon.
+d Turns out you read the wrong schedule, and today is healthy Monday.
+d That feeling you get when there is no meat.
+d You settle for plain old eggs and coffee, as you do most mornings.
+o Time is running out, you better go to class.
+t class
+
+r skipping
+d You decided to skip class.
+d You feel bad about it since you are paying for your own education.
+o You go to class.
+t class
+
+r class
+d You are in class.
+d You are absorbing knowledge.
+d You actually kind of like it, because you're doing something productive.
+d Class is now over.
+o Decide to go to a random place because you want to do something new.
+t adventure
+o You tread back to College 10 to eat lunch.
+t lunch
+
+r adventure
+d You decide to go an adventure.
+d You decide to explore the forests of UCSC.
+d However, you feel lethargic and tired, and you realize you have no drive.
+o You decide to go eat lunch.
+t lunch
+
+r lunch
+d There is nothing good in the dining hall, unsurprisingly.
+d After looking around, you make a sandwhich.
+d It tastes bland, but at least it's better than everything else.
+o Your mind begins to drift, and you start fantasizing.
+t fantasy
+o You see a special someone you want to talk to.
+t special
+o You've finished your meal and feel fat after eating, its time to go to the gym.
+t gym
+
+r special
+d Your heart is beating rapidly.
+d You're unsure of whether or not you should do this.
+o Work up the courage and talk to them.
+t talk
+o Decide not to talk to them, out of fear of rejection.
+t notalk
+
+r talk
+d You've worked up the courage to talk to that special someone
+d You go up to them, and attempt to start a conversation.
+d They seem disinterested.
+o You feel heartbroken, and decide to go to the gym to feel better.
+t gym
+
+r notalk
+d You think to yourself that you had no chance anyway.
+o You go to the gym to try to feel better.
+t gym
+
+r fantasy
+d You are fantasizing.
+o You fantasize about yourself flying.
+t fly
+o You fantasize about yourself in combat.
+t combat
+
+r fly
+d You are flying right now.
+d Soaring high above the ground.
+d You feel free and exhilirated.
+d Unfortunately, this is only a fantasy.
+o Continue fantasies.
+t fantasy
+o Snap back into reality
+t lunch
+
+r combat
+d You fantasize about yourself in combat.
+d Like a champion, about to battle in Summoners Rift.
+d You prepare yourself for an epic bloodbath.
+d Unfortunately, this is only a fantasy
+o Continue fantasies.
+t fantasy
+o Snap back into reality
+t lunch
+
+r gym
+d You are at the gym.
+d You actually feel happy here.
+d It's a place that allows for self-improvement.
+d You feel a little better after lifting some heavy weights.
+o You've finished with the gym, it's time to go back and do homework.
+t homework
+
+r homework
+d You're now doing homework.
+d Albeit tedious, you find enjoyment in problem solving.
+d You actually kind of like it.
+d You finish your homework.
+o Your friends are online, they invite you to play League of Legends.
+t league
+
+r league
+d You are playing League of Legends.
+d It's not going well.
+d Top lane is feeding, mid lane is feeding, jungler isn't helping.
+o You decide to stop playing, and instead program something for fun.
+t program
+o You get frustrated and decide to browse your phone to kill some time.
+t phone
+
+r program
+d You attempt to create something.
+d You've amassed a good amount of knowledge from CMPS 12B.
+d Now all you need is a spark of creativity.
+d You just can't seem to find any creativity.
+d Your whole life has focused on grades and academics.
+o Give up and do some more homework.
+t homework
+o Give up and browse phone.
+t phone
+
+r phone
+d You are on your phone.
+d You look on Facebook in search of something interesting.
+d Nothing.
+d You look on Reddit.
+d Nothing.
+d You look anywhere to find something interesting.
+d Nothing.
+o It's getting late, You should sleep.
+t sleep(win)
+o You decide to browse your phone some more.
+t phone
+
+r sleep(win)
+d You're falling asleep
+d You didn't really do much today
+d But at least you made it through the day in one piece
+d I say thats a win!
+d You have won!

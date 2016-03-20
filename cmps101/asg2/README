@@ -1,0 +1,10 @@
+David Sun
+ddsun@ucsc.edu
+pa2 (Lex)
+Files submitted include:
+Lex.c - Contains the file IO operations
+ListClient.c - contains the list tests
+List.c - contains the implementation functions
+List.h - header file for list
+Makefile - used to compile Lex
+README - lists all files with description

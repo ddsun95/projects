@@ -1,0 +1,9 @@
+David Sun
+ddsun@ucsc.edu
+pa1 (Lex)
+Submitted files include:
+README - lists all files included
+Makefile - builds the program into an executable
+Lex.java - the main program of the assignment
+ListClient.java - tests for the List ADT
+List.java - the List ADT

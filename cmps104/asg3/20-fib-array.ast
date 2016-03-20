@@ -1,0 +1,140 @@
+ROOT "" 0.0.0
+| PROTOTYPE "" 5.23.0
+| | VOID "void" 5.23.0
+| | | DECLID "__assert_fail" 5.23.5
+| | PARAMLIST "(" 5.23.19
+| | | STRING "string" 5.23.20
+| | | | DECLID "expr" 5.23.27
+| | | STRING "string" 5.23.33
+| | | | DECLID "file" 5.23.40
+| | | INT "int" 5.23.46
+| | | | DECLID "line" 5.23.50
+| PROTOTYPE "" 5.24.0
+| | VOID "void" 5.24.0
+| | | DECLID "putb" 5.24.5
+| | PARAMLIST "(" 5.24.10
+| | | BOOL "bool" 5.24.11
+| | | | DECLID "b" 5.24.16
+| PROTOTYPE "" 5.25.0
+| | VOID "void" 5.25.0
+| | | DECLID "putc" 5.25.5
+| | PARAMLIST "(" 5.25.10
+| | | CHAR "char" 5.25.11
+| | | | DECLID "c" 5.25.16
+| PROTOTYPE "" 5.26.0
+| | VOID "void" 5.26.0
+| | | DECLID "puti" 5.26.5
+| | PARAMLIST "(" 5.26.10
+| | | INT "int" 5.26.11
+| | | | DECLID "i" 5.26.15
+| PROTOTYPE "" 5.27.0
+| | VOID "void" 5.27.0
+| | | DECLID "puts" 5.27.5
+| | PARAMLIST "(" 5.27.10
+| | | STRING "string" 5.27.11
+| | | | DECLID "s" 5.27.18
+| PROTOTYPE "" 5.28.0
+| | VOID "void" 5.28.0
+| | | DECLID "endl" 5.28.5
+| | '(' "(" 5.28.10
+| PROTOTYPE "" 5.29.0
+| | INT "int" 5.29.0
+| | | DECLID "getc" 5.29.4
+| | '(' "(" 5.29.9
+| PROTOTYPE "" 5.30.0
+| | STRING "string" 5.30.0
+| | | DECLID "getw" 5.30.7
+| | '(' "(" 5.30.12
+| PROTOTYPE "" 5.31.0
+| | STRING "string" 5.31.0
+| | | DECLID "getln" 5.31.7
+| | '(' "(" 5.31.13
+| PROTOTYPE "" 5.32.6
+| | ARRAY "[]" 5.32.6
+| | | STRING "string" 5.32.0
+| | | DECLID "getargv" 5.32.9
+| | '(' "(" 5.32.17
+| PROTOTYPE "" 5.33.0
+| | VOID "void" 5.33.0
+| | | DECLID "exit" 5.33.5
+| | PARAMLIST "(" 5.33.10
+| | | INT "int" 5.33.11
+| | | | DECLID "status" 5.33.15
+| VARDECL "=" 6.9.16
+| | ARRAY "[]" 6.9.3
+| | | INT "int" 6.9.0
+| | | DECLID "fibonacci" 6.9.6
+| | NEWARRAY "new" 6.9.18
+| | | INT "int" 6.9.22
+| | | INTCON "30" 6.9.26
+| '=' "=" 6.11.13
+| | INDEX "[" 6.11.9
+| | | IDENT "fibonacci" 6.11.0
+| | | INTCON "0" 6.11.10
+| | INTCON "0" 6.11.15
+| '=' "=" 6.12.13
+| | INDEX "[" 6.12.9
+| | | IDENT "fibonacci" 6.12.0
+| | | INTCON "1" 6.12.10
+| | INTCON "1" 6.12.15
+| VARDECL "=" 6.14.10
+| | INT "int" 6.14.0
+| | | DECLID "index" 6.14.4
+| | INTCON "2" 6.14.12
+| WHILE "while" 6.15.0
+| | LT "<" 6.15.13
+| | | IDENT "index" 6.15.7
+| | | INTCON "30" 6.15.15
+| | BLOCK "{" 6.15.19
+| | | '=' "=" 6.16.20
+| | | | INDEX "[" 6.16.12
+| | | | | IDENT "fibonacci" 6.16.3
+| | | | | IDENT "index" 6.16.13
+| | | | '+' "+" 6.16.43
+| | | | | INDEX "[" 6.16.31
+| | | | | | IDENT "fibonacci" 6.16.22
+| | | | | | '-' "-" 6.16.38
+| | | | | | | IDENT "index" 6.16.32
+| | | | | | | INTCON "1" 6.16.40
+| | | | | INDEX "[" 6.16.54
+| | | | | | IDENT "fibonacci" 6.16.45
+| | | | | | '-' "-" 6.16.61
+| | | | | | | IDENT "index" 6.16.55
+| | | | | | | INTCON "2" 6.16.63
+| | | '=' "=" 6.17.9
+| | | | IDENT "index" 6.17.3
+| | | | '+' "+" 6.17.17
+| | | | | IDENT "index" 6.17.11
+| | | | | INTCON "1" 6.17.19
+| '=' "=" 6.20.6
+| | IDENT "index" 6.20.0
+| | INTCON "0" 6.20.8
+| CALL "(" 6.21.5
+| | IDENT "puts" 6.21.0
+| | STRINGCON ""Numeri di figlio Bonacci\n"" 6.21.6
+| WHILE "while" 6.22.0
+| | LT "<" 6.22.13
+| | | IDENT "index" 6.22.7
+| | | INTCON "30" 6.22.15
+| | BLOCK "{" 6.22.19
+| | | CALL "(" 6.23.8
+| | | | IDENT "puts" 6.23.3
+| | | | STRINGCON ""fibonacci["" 6.23.9
+| | | CALL "(" 6.24.8
+| | | | IDENT "puti" 6.24.3
+| | | | IDENT "index" 6.24.9
+| | | CALL "(" 6.25.8
+| | | | IDENT "puts" 6.25.3
+| | | | STRINGCON "" = "" 6.25.9
+| | | CALL "(" 6.26.8
+| | | | IDENT "puti" 6.26.3
+| | | | INDEX "[" 6.26.18
+| | | | | IDENT "fibonacci" 6.26.9
+| | | | | IDENT "index" 6.26.19
+| | | CALL "(" 6.27.8
+| | | | IDENT "endl" 6.27.3
+| | | '=' "=" 6.28.9
+| | | | IDENT "index" 6.28.3
+| | | | '+' "+" 6.28.17
+| | | | | IDENT "index" 6.28.11
+| | | | | INTCON "1" 6.28.19

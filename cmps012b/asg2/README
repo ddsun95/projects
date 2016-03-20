@@ -1,0 +1,16 @@
+-David Sun
+-1347057
+-CMPS 12B/M
+-11/5/2014
+-README
+-The README lists all files being submitted.
+-The following files will be submitted:
+-auxlib.java
+-edfile.java
+-dllist.java
+-dllistTest.java
+-Makefile
+-Readme
+-Special note: In certain cases in which the list is empty, I made it such that functions to navigate 
+to the beginning, end, previous, following, items would print out a message saying the operation is invalid
+since the list is empty.

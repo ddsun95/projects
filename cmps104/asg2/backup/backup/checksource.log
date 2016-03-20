@@ -1,0 +1,6 @@
+checksource: README: No such file or directory
+checksource: improper character \x92
+   file "scanner.l": 9 errors: lines 23--24, 26--27
+checksource: missing newline at end of line
+   file "scanner.l": 1 errors: line 92
+checksource: TOTAL COMPLAINTS: 11

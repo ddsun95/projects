@@ -1,0 +1,85 @@
+import static java.lang.System.*;
+
+class Tree {
+
+    private class Node {
+        String key;
+        Queue<Integer> value;
+        Node left;
+        Node right;
+
+        public Node(String key){
+			this.key = key;
+			this.value = null;
+			this.left = null;
+			this.right = null;
+        }
+    }
+    
+    private Node root;
+
+    private void debugHelper(Node tree, int depth) {
+        // Your code here might be recursive
+    	if(tree == null) return;
+   		String spaces = "";
+   		for(int i = 0; i < depth; i++) spaces += "  ";
+   		depth++;
+    	debugHelper(tree.left, depth);
+    	out.printf("%s%d %s\n", spaces, depth - 1, tree.key);
+    	debugHelper(tree.right, depth);
+    }
+
+    private void outputHelper(Node tree) {
+    	//throw new UnsupportedOperationException();
+    	if(tree == null) return;
+    	outputHelper(tree.left);
+    	out.printf("%s : ", tree.key);
+    	print(tree.value);
+    	outputHelper(tree.right);
+    }
+
+    public void insert(String key, Integer linenum) {
+    	Node n = new Node(key);
+    	n.value = new Queue<Integer>();
+    	n.value.insert(linenum);
+
+    	if(root == null){
+    		root = n;
+    	} else {
+    		int comp = 0;
+    		Node t = root, b = null;
+			while(t != null){
+				comp = (key.compareTo(t.key));
+				if(comp < 0){	//search left
+					b = t;
+					t = t.left;
+				} else if (comp > 0) {	//search right
+					b = t;
+					t = t.right;
+				} else if (comp == 0) {	//keys are equal, insert the linenumber in the existing node and return
+					n = null;
+					t.value.insert(linenum);
+					return;
+				}
+			}
+			t = n;
+			if(comp > 0) b.right = t;
+			if(comp < 0) b.left  = t;
+		}
+    }
+
+    private void print(Queue<Integer> q){
+    	for(Integer i : q) out.printf("%d ", i);
+    	out.printf("\n");
+    }
+
+    public void debug() {
+        debugHelper(root, 0);
+    }
+
+    public void output() {
+        // Show sorted words with lines where each word appears
+        outputHelper(root);
+    }
+
+}

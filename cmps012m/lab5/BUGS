@@ -1,0 +1,42 @@
+David Sun
+1357057
+CMPS 12B/M
+11/15/2014
+BUGS
+This file lists the bugs found in the original list.c by line.
+This file also lists the solutions to the bugs found in list.c
+
+Line 29: list_insert2, the function is assigning head to point at the 
+address of a variable that will be invalid once the function ends, leaving 
+us with a dangling pointer.
+
+fix for line 29: Since we already have a function that inserts one element at 
+the front of the list, we can call list_insert twice to insert two elements.
+list_insert works because it explicitly allocates memory to store the node
+rather than use local variables which are destroyed once the function ends.
+
+Line 35: The while loop terminates at the first instance of v.
+
+Line 38: The if statement assigns the next pointer of a node to skip over the
+node we want to delete, yet does not take into account that we still
+need to manually clear the memory occupied by the node that has been skipped over.
+
+fix for line 35 and 38: use a for loop start at the beginning and have two node
+pointers to iterate through the list. If we hit a node's next value is the
+value we want to search for, assign the helper pointer to point to the target node.
+Have the previous node's next pointer to point to node->next->next. Call the
+free() function to clear the memory occupied by the node we wish to remove.
+Since this is in a for loop, it will iterate through all the elements and remove
+all instances of the target value. Set the helper pointer to NULL so we have no
+dangling pointers.
+
+line 57: free(head) only frees the the node head points to. This solution will work 
+if there is only one element in the list, but if there is more than one element, 
+it will delete head, and render the remaining elements of the list unreachable, since we have
+lost all other references to the rest of the list.
+
+fix for line 57: Use two node pointers and iterate through the list. Use a helper node pointer
+to follow one node behind. Free the memory where at the helper pointer's location. 
+Set head to NULL, and the helper pointer to NULL, so we have no dangling pointers.
+
+

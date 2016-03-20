@@ -1,0 +1,130 @@
+ROOT "" 0.0.0
+| PROTOTYPE "" 5.23.0
+| | VOID "void" 5.23.0
+| | | DECLID "__assert_fail" 5.23.5
+| | PARAMLIST "(" 5.23.19
+| | | STRING "string" 5.23.20
+| | | | DECLID "expr" 5.23.27
+| | | STRING "string" 5.23.33
+| | | | DECLID "file" 5.23.40
+| | | INT "int" 5.23.46
+| | | | DECLID "line" 5.23.50
+| PROTOTYPE "" 5.24.0
+| | VOID "void" 5.24.0
+| | | DECLID "putb" 5.24.5
+| | PARAMLIST "(" 5.24.10
+| | | BOOL "bool" 5.24.11
+| | | | DECLID "b" 5.24.16
+| PROTOTYPE "" 5.25.0
+| | VOID "void" 5.25.0
+| | | DECLID "putc" 5.25.5
+| | PARAMLIST "(" 5.25.10
+| | | CHAR "char" 5.25.11
+| | | | DECLID "c" 5.25.16
+| PROTOTYPE "" 5.26.0
+| | VOID "void" 5.26.0
+| | | DECLID "puti" 5.26.5
+| | PARAMLIST "(" 5.26.10
+| | | INT "int" 5.26.11
+| | | | DECLID "i" 5.26.15
+| PROTOTYPE "" 5.27.0
+| | VOID "void" 5.27.0
+| | | DECLID "puts" 5.27.5
+| | PARAMLIST "(" 5.27.10
+| | | STRING "string" 5.27.11
+| | | | DECLID "s" 5.27.18
+| PROTOTYPE "" 5.28.0
+| | VOID "void" 5.28.0
+| | | DECLID "endl" 5.28.5
+| | '(' "(" 5.28.10
+| PROTOTYPE "" 5.29.0
+| | INT "int" 5.29.0
+| | | DECLID "getc" 5.29.4
+| | '(' "(" 5.29.9
+| PROTOTYPE "" 5.30.0
+| | STRING "string" 5.30.0
+| | | DECLID "getw" 5.30.7
+| | '(' "(" 5.30.12
+| PROTOTYPE "" 5.31.0
+| | STRING "string" 5.31.0
+| | | DECLID "getln" 5.31.7
+| | '(' "(" 5.31.13
+| PROTOTYPE "" 5.32.6
+| | ARRAY "[]" 5.32.6
+| | | STRING "string" 5.32.0
+| | | DECLID "getargv" 5.32.9
+| | '(' "(" 5.32.17
+| PROTOTYPE "" 5.33.0
+| | VOID "void" 5.33.0
+| | | DECLID "exit" 5.33.5
+| | PARAMLIST "(" 5.33.10
+| | | INT "int" 5.33.11
+| | | | DECLID "status" 5.33.15
+| FUNCTION "" 6.5.0
+| | VOID "void" 6.5.0
+| | | DECLID "move" 6.5.5
+| | PARAMLIST "(" 6.5.10
+| | | STRING "string" 6.5.11
+| | | | DECLID "src" 6.5.18
+| | | STRING "string" 6.5.23
+| | | | DECLID "dst" 6.5.30
+| | BLOCK "{" 6.5.35
+| | | CALL "(" 6.6.8
+| | | | IDENT "puts" 6.6.3
+| | | | STRINGCON ""Move a disk from "" 6.6.9
+| | | CALL "(" 6.7.8
+| | | | IDENT "puts" 6.7.3
+| | | | IDENT "src" 6.7.9
+| | | CALL "(" 6.8.8
+| | | | IDENT "puts" 6.8.3
+| | | | STRINGCON "" to "" 6.8.9
+| | | CALL "(" 6.9.8
+| | | | IDENT "puts" 6.9.3
+| | | | IDENT "dst" 6.9.9
+| | | CALL "(" 6.10.8
+| | | | IDENT "puts" 6.10.3
+| | | | STRINGCON "".\n"" 6.10.9
+| FUNCTION "" 6.13.0
+| | VOID "void" 6.13.0
+| | | DECLID "towers" 6.13.5
+| | PARAMLIST "(" 6.13.12
+| | | INT "int" 6.13.13
+| | | | DECLID "ndisks" 6.13.17
+| | | STRING "string" 6.13.25
+| | | | DECLID "src" 6.13.32
+| | | STRING "string" 6.13.37
+| | | | DECLID "tmp" 6.13.44
+| | | STRING "string" 6.13.49
+| | | | DECLID "dst" 6.13.56
+| | BLOCK "{" 6.13.61
+| | | IF "if" 6.14.3
+| | | | LT "<" 6.14.14
+| | | | | IDENT "ndisks" 6.14.7
+| | | | | INTCON "1" 6.14.16
+| | | | RETURN "return" 6.14.19
+| | | CALL "(" 6.15.10
+| | | | IDENT "towers" 6.15.3
+| | | | '-' "-" 6.15.18
+| | | | | IDENT "ndisks" 6.15.11
+| | | | | INTCON "1" 6.15.20
+| | | | IDENT "src" 6.15.23
+| | | | IDENT "dst" 6.15.28
+| | | | IDENT "tmp" 6.15.33
+| | | CALL "(" 6.16.8
+| | | | IDENT "move" 6.16.3
+| | | | IDENT "src" 6.16.9
+| | | | IDENT "dst" 6.16.14
+| | | CALL "(" 6.17.10
+| | | | IDENT "towers" 6.17.3
+| | | | '-' "-" 6.17.18
+| | | | | IDENT "ndisks" 6.17.11
+| | | | | INTCON "1" 6.17.20
+| | | | IDENT "tmp" 6.17.23
+| | | | IDENT "src" 6.17.28
+| | | | IDENT "dst" 6.17.33
+| CALL "(" 6.20.7
+| | IDENT "towers" 6.20.0
+| | INTCON "4" 6.20.8
+| | STRINGCON ""Source"" 6.20.11
+| | STRINGCON ""Temporary"" 6.20.21
+| | STRINGCON ""Destination"" 6.20.34

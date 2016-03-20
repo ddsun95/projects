@@ -1,0 +1,8 @@
+Makefile:54: Makefile.dep: No such file or directory
+gmake --no-print-directory dep
+g++ -MM -std=gnu++11 stringset.cpp auxlib.cpp main.cpp >>Makefile.dep
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c stringset.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c auxlib.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c main.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -o oc stringset.o auxlib.o main.o
+checksource stringset.h auxlib.h stringset.cpp auxlib.cpp main.cpp Makefile README

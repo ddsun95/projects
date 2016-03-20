@@ -1,0 +1,130 @@
+ROOT "" 0.0.0
+| VARDECL "=" 3.7.8
+| | ARRAY "[]" 3.7.3
+| | | INT "int" 3.7.0
+| | | DECLID "a" 3.7.6
+| | NULL "null" 3.7.10
+| VARDECL "=" 3.8.14
+| | ARRAY "[]" 3.8.9
+| | | TYPEID "reference" 3.8.0
+| | | DECLID "a" 3.8.12
+| | NEWARRAY "new" 3.8.16
+| | | STRING "string" 3.8.20
+| | | INTCON "10" 3.8.27
+| PROTOTYPE "" 3.9.0
+| | VOID "void" 3.9.0
+| | | DECLID "foo" 3.9.5
+| | '(' "(" 3.9.9
+| PROTOTYPE "" 3.10.0
+| | VOID "void" 3.10.0
+| | | DECLID "foo" 3.10.5
+| | PARAMLIST "(" 3.10.9
+| | | INT "int" 3.10.10
+| | | | DECLID "a" 3.10.14
+| FUNCTION "" 3.11.0
+| | VOID "void" 3.11.0
+| | | DECLID "foo" 3.11.5
+| | PARAMLIST "(" 3.11.9
+| | | ARRAY "[]" 3.11.13
+| | | | INT "int" 3.11.10
+| | | | DECLID "a" 3.11.16
+| | | ARRAY "[]" 3.11.22
+| | | | INT "int" 3.11.19
+| | | | DECLID "b" 3.11.25
+| | BLOCK "{" 3.11.28
+| | | VARDECL "=" 3.11.35
+| | | | INT "int" 3.11.29
+| | | | | DECLID "x" 3.11.33
+| | | | '+' "+" 3.11.39
+| | | | | IDENT "a" 3.11.37
+| | | | | IDENT "b" 3.11.41
+| STRUCT "struct" 3.12.0
+| | TYPEID "foo" 3.12.7
+| | INT "int" 3.12.13
+| | | FIELD "a" 3.12.17
+| | INT "int" 3.12.20
+| | | FIELD "b" 3.12.24
+| '+' "+" 3.14.2
+| | IDENT "a" 3.14.0
+| | IDENT "b" 3.14.4
+| CALL "(" 3.15.2
+| | IDENT "f" 3.15.0
+| CALL "(" 3.16.2
+| | IDENT "f" 3.16.0
+| | IDENT "x" 3.16.3
+| | '+' "+" 3.16.7
+| | | IDENT "y" 3.16.6
+| | | INTCON "3" 3.16.8
+| | IDENT "z" 3.16.11
+| '+' "+" 3.17.4
+| | IDENT "foo" 3.17.0
+| | IDENT "bar" 3.17.6
+| '=' "=" 3.18.2
+| | IDENT "a" 3.18.0
+| | '=' "=" 3.18.6
+| | | IDENT "b" 3.18.4
+| | | '=' "=" 3.18.10
+| | | | IDENT "c" 3.18.8
+| | | | IDENT "d" 3.18.12
+| '=' "=" 3.19.5
+| | IDENT "test" 3.19.0
+| | '+' "+" 3.19.17
+| | | '+' "+" 3.19.11
+| | | | IDENT "abc" 3.19.7
+| | | | IDENT "def" 3.19.13
+| | | IDENT "ghi" 3.19.19
+| '+' "+" 3.20.14
+| | '+' "+" 3.20.5
+| | | IDENT "this" 3.20.0
+| | | '*' "*" 3.20.10
+| | | | INTCON "23" 3.20.7
+| | | | IDENT "a" 3.20.12
+| | STRINGCON ""hello"" 3.20.16
+| WHILE "while" 3.21.0
+| | LT "<" 3.21.9
+| | | IDENT "a" 3.21.7
+| | | IDENT "b" 3.21.11
+| | '=' "=" 3.21.16
+| | | IDENT "f" 3.21.14
+| | | '+' "+" 3.21.20
+| | | | IDENT "f" 3.21.18
+| | | | INTCON "1" 3.21.22
+| RETURN "return" 3.22.0
+| | '+' "+" 3.22.9
+| | | INTCON "3" 3.22.7
+| | | INTCON "4" 3.22.11
+| '=' "=" 3.23.5
+| | INDEX "[" 3.23.1
+| | | IDENT "a" 3.23.0
+| | | IDENT "i" 3.23.2
+| | INDEX "[" 3.23.8
+| | | IDENT "b" 3.23.7
+| | | IDENT "j" 3.23.9
+| RETURN "return" 3.24.0
+| WHILE "while" 3.25.0
+| | TRUE "true" 3.25.7
+| | BLOCK "{" 3.25.13
+| | | '=' "=" 3.25.16
+| | | | IDENT "a" 3.25.14
+| | | | INTCON "3" 3.25.18
+| | | '=' "=" 3.25.23
+| | | | IDENT "b" 3.25.21
+| | | | INTCON "4" 3.25.25
+| IF "if" 3.26.0
+| | EQ "==" 3.26.6
+| | | IDENT "a" 3.26.4
+| | | IDENT "b" 3.26.9
+| | CALL "(" 3.26.14
+| | | IDENT "f" 3.26.12
+| | | IDENT "x" 3.26.15
+| IFELSE "if" 3.27.0
+| | NE "!=" 3.27.6
+| | | IDENT "a" 3.27.4
+| | | IDENT "b" 3.27.9
+| | '=' "=" 3.27.14
+| | | IDENT "y" 3.27.12
+| | | INTCON "3" 3.27.16
+| | CALL "(" 3.27.26
+| | | IDENT "f" 3.27.24
+| | | IDENT "y" 3.27.27
+| | | IDENT "z" 3.27.30

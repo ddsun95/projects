@@ -1,0 +1,6 @@
+partnercheck: ./PARTNER: format OK:
+user    = cliew
+uid     = 32640
+gecos   = Curtis Sheldon Liew
+home    = /afs/cats.ucsc.edu/users/t/cliew
+shell   = /bin/csh

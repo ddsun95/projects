@@ -1,0 +1,12 @@
+David Sun
+ddsun@ucsc.edu
+pa3 (Sparse)
+
+Files Submitted include:
+Sparse.java - main executable
+Matrix.java - ADT for the matrix
+List.java - ADT for list, which the matrix ADT uses
+MatrixTest.java - test client for the matrix ADT
+ListTest.java - test client for the list ADT
+Makefile - builds the Sparse executable
+README - lists all files submitted including a description of each file
