@@ -1,5 +1,6 @@
 // David Sun
 // CMPS-112 Homework 2
+// This program prints out big numbers
 // Partner: none
 
 // To run, type in command line arguments: javac Number.java
