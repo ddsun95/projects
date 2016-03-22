@@ -1,7 +1,6 @@
-
 -- Program: hw1.hs
 -- Author: David Sun
-
+-- Partner : None
 --1
 citeAuthor :: String->String->String
 citeAuthor first last = last ++ ", " ++ first
